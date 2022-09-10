@@ -134,6 +134,7 @@ export function Story(props) {
                     a.addEventListener('canplaythrough', loadingFinished, false);
                     a.addEventListener('error', loadingFinished);
                     audios[url] = a;
+                    a.load();
                 }
             }
             return audios;
